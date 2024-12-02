@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - AC Verdejo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #1a1a2e;
+      color: #eaeaea; 
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #0f3460; 
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #eaeaea; 
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #e94560;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      text-align: left;
+      flex-direction: column;
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .profile-section {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .profile-picture {
+      width: 200px;
+      height: 200px;
+      border: 4px solid #e94560; 
+      border-radius: 50%;
+      background-image: url('profile.jpg');
+      background-size: cover;
+      background-position: center;
+      background-color: #0f3460;
+      flex-shrink: 0;
+    }
+
+    .profile-text {
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 600;
+      color: #eaeaea; 
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #b0b0b0; 
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    .skills {
+      margin-top: 30px;
+      text-align: left;
+      width: 100%;
+    }
+
+    .skills h2 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #e94560; 
+      margin-bottom: 15px;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills ul li {
+      font-size: 18px;
+      color: #eaeaea; 
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .skills ul li::before {
+      content: "•";
+      color: #e94560; 
+      margin-right: 10px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 16px;
+      }
+      .profile-picture {
+        width: 150px;
+        height: 150px;
+      }
+      .skills h2 {
+        font-size: 24px;
+      }
+      .skills ul li {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about me.html">About Me</a></li>
+        <li><a href="project.html">My Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="profile-section">
+      <div class="profile-picture"></div>
+      <div class="profile-text">
+        <h1>About Me</h1>
+        <p>
+          Hello! I’m <strong>AC Verdejo</strong>, I am AC Verdejo, 26 years old, single, and residing in Barangay Salog, Goa, Camarines Sur. I am studying at Partido State University, pursuing a Bachelor of Science in Information Technology. I enjoy playing online games and sports. I also know how to get along well with others, especially when it comes to things I know are right.
+        </p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+
